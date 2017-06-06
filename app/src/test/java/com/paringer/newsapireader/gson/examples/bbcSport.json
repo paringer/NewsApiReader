@@ -1,0 +1,87 @@
+{
+  "status": "ok",
+  "source": "bbc-sport",
+  "sortBy": "top",
+  "articles": [
+    {
+      "author": "BBC Sport",
+      "title": "Champions Trophy: Joe Root hits a century as England beat Bangladesh",
+      "description": "Joe Root makes an unbeaten 133 and Alex Hales hits 95 as England cruise to an eight-wicket win over Bangladesh in their Champions Trophy opener.",
+      "url": "http://www.bbc.co.uk/sport/cricket/40125054",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/17CD2/production/_96309479_rootgetty.jpg",
+      "publishedAt": "2017-06-01T17:21:38+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "French Open 2017: Andy Murray fights back to reach Roland Garros third round",
+      "description": "World number one Andy Murray and British number two Kyle Edmund reach the third round of the French Open.",
+      "url": "http://www.bbc.co.uk/sport/tennis/40120252",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/60AE/production/_96305742_andymurray.jpg",
+      "publishedAt": "2017-06-01T16:35:56+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "Yaya Toure: Manchester City midfielder signs new contract",
+      "description": "Manchester City midfielder Yaya Toure has signed a new one-year deal with the Premier League club.",
+      "url": "http://www.bbc.co.uk/sport/football/40126362",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/7E7C/production/_96308323_toure-index.jpg",
+      "publishedAt": "2017-06-01T17:28:29+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "French Open: Can Andre Agassi bring back 'warrior' Novak Djokovic?",
+      "description": "Will the addition of 'super coach' Andre Agassi be enough to bring back the \"warrior\" in Novak Djokovic?",
+      "url": "http://www.bbc.co.uk/sport/tennis/40118530",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/11D27/production/_96299927_novak_agassi_2_getty.jpg",
+      "publishedAt": "2017-06-01T17:08:17+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "England v Bangladesh: Ben Stokes sledging leads to confrontation with Tamim Iqbal",
+      "description": "England's Ben Stokes and Bangladesh's Tamim Iqbal exchange words during the opening match of the Champions Trophy at The Oval.",
+      "url": "http://www.bbc.co.uk/sport/cricket/40119218",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/7BDE/production/_96301713_p054lv05.jpg",
+      "publishedAt": "2017-06-01T17:21:38+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "Chelsea paid £150.8m by Premier League after winning 2016-17 title",
+      "description": "Chelsea were paid £150.8m by the Premier League after winning the 2016-17 title - 50% more than last season's top earners.",
+      "url": "http://www.bbc.co.uk/sport/football/40125394",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/182AE/production/_96309989_contegetty.jpg",
+      "publishedAt": "2017-06-01T18:51:28+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "Champions League final: Is Gareth Bale finished at Real Madrid?",
+      "description": "A change of formation, competition for places, injuries and a lukewarm press - why it is tougher than ever for Gareth Bale at the Bernabeu.",
+      "url": "http://www.bbc.co.uk/sport/football/40105284",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/1408A/production/_96285028_baleindex.jpg",
+      "publishedAt": "2017-06-01T11:56:23+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "Ulster v Barbarians",
+      "description": "Live video coverage of Ulster against Barbarians from the Kingspan Stadium, Belfast.",
+      "url": "http://www.bbc.co.uk/sport/live/rugby-union/39950674",
+      "urlToImage": "http://newsimg.bbc.co.uk/media/images/67165000/jpg/_67165916_67165915.jpg",
+      "publishedAt": "2017-06-01T18:13:27"
+    },
+    {
+      "author": "BBC News",
+      "title": "Mr Met's 'inappropriate gesture' and the #CrazySocks4Docs initiative",
+      "description": "Find out what's buzzing in the social media world today.",
+      "url": "http://www.bbc.co.uk/news/blogs-trending-40118579",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/18127/production/_96299589_350e6385-08f5-4aa6-bdbe-efca1509b1fd.jpg",
+      "publishedAt": null
+    },
+    {
+      "author": "BBC Sport",
+      "title": "Nordea Masters: Max Orrin shares lead with Jamie Donaldson and Bradley Dredge one behind",
+      "description": "England's Max Orrin shares the lead with Italy's Renato Paratore after the opening round at the Nordea Masters in Malmo.",
+      "url": "http://www.bbc.co.uk/sport/golf/40123774",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/185A7/production/_86515799_golf.jpg",
+      "publishedAt": "2017-06-01T19:21:10+00:00"
+    }
+  ]
+}

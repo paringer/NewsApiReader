@@ -1,0 +1,87 @@
+{
+  "status": "ok",
+  "source": "bbc-news",
+  "sortBy": "top",
+  "articles": [
+    {
+      "author": "BBC News",
+      "title": "Trump 'to announce Paris climate deal pullout'",
+      "description": "President Trump is due to announce plans to withdraw from the Paris climate agreement, US media say.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-40127326",
+      "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/cpsprodpb/1316E/production/_96309187_mediaitem96309186.jpg",
+      "publishedAt": "2017-06-01T19:18:57+00:00"
+    },
+    {
+      "author": "BBC News",
+      "title": "Trump 'to pull US out of Paris climate change deal'",
+      "description": "President Trump is poised to break ranks with nearly 200 countries because the pact is a \"bad deal\".",
+      "url": "http://www.bbc.co.uk/news/live/world-us-canada-40123293",
+      "urlToImage": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+      "publishedAt": null
+    },
+    {
+      "author": "BBC News",
+      "title": "Jeremy Corbyn and Theresa May clash over post-Brexit Britain",
+      "description": "Labour and Tory leaders say what they want for post-Brexit Britain - with a week to go to polling day.",
+      "url": "http://www.bbc.co.uk/news/election-2017-40112003",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/1298A/production/_96307167_comp2june.jpg",
+      "publishedAt": "2017-06-01T16:59:05+00:00"
+    },
+    {
+      "author": "BBC News",
+      "title": "Resorts World Manila: Shooting heard at leisure complex",
+      "description": "Gunfire and blasts are reported at a hotel complex near Manila airport in the Philippines.",
+      "url": "http://www.bbc.co.uk/news/world-asia-40123389",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/230A/production/_96307980_manilapolice.jpg",
+      "publishedAt": "2017-06-01T19:11:05+00:00"
+    },
+    {
+      "author": "BBC News",
+      "title": "Manchester attack: Saffie Roussos mum 'told of her death'",
+      "description": "The mother and sister of Manchester attack victim Saffie Roussos are now said to be \"out of danger\".",
+      "url": "http://www.bbc.co.uk/news/uk-england-manchester-40118243",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/D9D7/production/_96176755_saffie_pa.jpg",
+      "publishedAt": "2017-06-01T13:50:29+00:00"
+    },
+    {
+      "author": "BBC News",
+      "title": "Manchester attack: Lead children's surgeon 'angry'",
+      "description": "Dr Ibrar Majid, who saved lives on the night of the attack, on his feelings as a Muslim for the bomber.",
+      "url": "http://www.bbc.co.uk/news/av/uk-40125302/manchester-attack-lead-children-s-surgeon-angry",
+      "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/cpsprodpb/E146/production/_96307675_p054ml4g.jpg",
+      "publishedAt": "2017-06-01T15:47:48+00:00"
+    },
+    {
+      "author": "BBC News",
+      "title": "Manchester One Love concert: 'Thousands make false ticket claims'",
+      "description": "Ticketmaster says 10,000 \"unscrupulous\" people applied for free tickets for a benefit concert.",
+      "url": "http://www.bbc.co.uk/news/entertainment-arts-40118865",
+      "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/cpsprodpb/DE6C/production/_96304965_arianaafp.jpg",
+      "publishedAt": "2017-06-01T16:58:28+00:00"
+    },
+    {
+      "author": "BBC Sport",
+      "title": "Champions Trophy: Joe Root hits a century as England beat Bangladesh",
+      "description": "Joe Root makes an unbeaten 133 and Alex Hales hits 95 as England cruise to an eight-wicket win over Bangladesh in their Champions Trophy opener.",
+      "url": "http://www.bbc.co.uk/sport/cricket/40125054",
+      "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/17CD2/production/_96309479_rootgetty.jpg",
+      "publishedAt": "2017-06-01T17:21:38+00:00"
+    },
+    {
+      "author": "BBC News",
+      "title": "Coronation Street actor Roy Barraclough dies aged 81",
+      "description": "The actor, who played Alec Gilroy in the soap, dies at the age of 81 after a short illness.",
+      "url": "http://www.bbc.co.uk/news/entertainment-arts-40119752",
+      "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/cpsprodpb/7723/production/_96299403_barracloughbbc.jpg",
+      "publishedAt": "2017-06-01T14:00:09+00:00"
+    },
+    {
+      "author": "BBC News",
+      "title": "Nigel Farage: Russia claims are preposterous",
+      "description": "Nigel Farage dismisses a report that he is a \"person of interest\" in an FBI investigation into Russia.",
+      "url": "http://www.bbc.co.uk/news/av/uk-politics-40126707/nigel-farage-russia-claims-are-preposterous",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/11621/production/_96310217_p054n298.jpg",
+      "publishedAt": "2017-06-01T18:47:35+00:00"
+    }
+  ]
+}
