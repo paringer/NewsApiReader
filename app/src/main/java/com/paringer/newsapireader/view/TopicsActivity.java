@@ -119,12 +119,12 @@ public class TopicsActivity extends AppCompatActivity implements NavigationView.
 
     @Override
     protected void onDestroy() {
+        RecyclerView.Adapter oldAdapter = articlesTopicsList.getAdapter();
+        if(oldAdapter instanceof MyAdapter) ((MyAdapter)oldAdapter).setOnClickListener(null);
         if (unbinder != null) {
             unbinder.unbind();
             unbinder = null;
         }
-        RecyclerView.Adapter oldAdapter = articlesTopicsList.getAdapter();
-        if(oldAdapter instanceof MyAdapter) ((MyAdapter)oldAdapter).setOnClickListener(null);
         super.onDestroy();
     }
 
