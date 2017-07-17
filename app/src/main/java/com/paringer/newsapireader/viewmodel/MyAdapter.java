@@ -19,6 +19,11 @@ import com.squareup.picasso.Picasso;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+
 /**
  * Created by Zhenya on 02.06.2017.
  */
@@ -47,47 +52,52 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return favoritesOnly;
     }
 
-    // BEGIN_INCLUDE(recyclerViewSampleViewHolder)
     /**
      * Provide a reference to the type of views that you are using (custom ViewHolder)
      */
-    public class ViewHolder extends RecyclerView.ViewHolder {
-//        private final TextView textView;
-        private final TextView textView3date;
-        private final TextView textView4Agency;
-        private final TextView textView2text;
-        private final ImageView imageIconUrl;
-        private final TextView textView5Author;
-        private final TextView textView1title;
-        private final ImageView imageView8Favor;
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        @BindView(R.id.textView3date)
+        TextView textView3date;
+        @BindView(R.id.textView4Agency)
+        TextView textView4Agency;
+        @BindView(R.id.textView2text)
+        TextView textView2text;
+        @BindView(R.id.imageIconUrl)
+        ImageView imageIconUrl;
+        @BindView(R.id.textView5Author)
+        TextView textView5Author;
+        @BindView(R.id.textView1title)
+        TextView textView1title;
+        @BindView(R.id.imageView8Favor)
+        ImageView imageView8Favor;
+        private Unbinder unbinder;
+        @OnClick(R.id.imageView8Favor)
+        public void onClickFavorite(View view) {
+            ArticleTopic itemData = mDataSet.get(getAdapterPosition());
+            toggleFavorites(view, itemData);
+//            MyAdapter.this.notifyItemChanged(getAdapterPosition());
+        }
 
 
         public ViewHolder(View v) {
             super(v);
             // Define click listener for the ViewHolder's View.
-            v.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d(TAG, "Element " + getAdapterPosition() + " clicked.");
-                    AdapterClickListener<ArticleTopic> listener = onClickListener;
-                    if (listener != null) listener.onItemClick(  getAdapterPosition(), mDataSet.get(getAdapterPosition()), ViewHolder.this);
-                }
-            });
-            textView1title = (TextView) v.findViewById(R.id.textView1title);
-            textView2text = (TextView) v.findViewById(R.id.textView2text);
-            textView3date = (TextView) v.findViewById(R.id.textView3date);
-            textView4Agency = (TextView) v.findViewById(R.id.textView4Agency);
-            textView5Author = (TextView) v.findViewById(R.id.textView5Author);
-            imageIconUrl = (ImageView) v.findViewById(R.id.imageIconUrl);
-            imageView8Favor = (ImageView) v.findViewById(R.id.imageView8Favor);
-            imageView8Favor.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    ArticleTopic itemData = mDataSet.get(getAdapterPosition());
-                    toggleFavorites(view, itemData);
-//                    MyAdapter.this.notifyItemChanged(getAdapterPosition());
-                }
-            });
+//            v.setOnClickListener(this);
+//            imageView8Favor.setOnClickListener(favoriteListener);
+            unbinder = ButterKnife.bind(this, v);
+        }
+
+        @Override
+        protected void finalize(){
+            if (unbinder != null) unbinder.unbind();
+        }
+
+        @OnClick
+        @Override
+        public void onClick(View v) {
+            Log.d(TAG, "Element " + getAdapterPosition() + " clicked.");
+            AdapterClickListener<ArticleTopic> listener = onClickListener;
+            if (listener != null) listener.onItemClick(  getAdapterPosition(), mDataSet.get(getAdapterPosition()), ViewHolder.this);
         }
 
         public void toggleFavorites(View view, ArticleTopic itemData) {
@@ -116,7 +126,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 {imageView8Favor.setImageResource(android.R.drawable.btn_star_big_off);}
         }
     }
-    // END_INCLUDE(recyclerViewSampleViewHolder)
 
     /**
      * Initialize the dataset of the Adapter.
@@ -128,7 +137,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         this.context = new WeakReference<Context>(context);
     }
 
-    // BEGIN_INCLUDE(recyclerViewOnCreateViewHolder)
     // Create new views (invoked by the layout manager)
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -137,9 +145,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 .inflate(R.layout.article_topic_item, viewGroup, false);
         return new ViewHolder(v);
     }
-    // END_INCLUDE(recyclerViewOnCreateViewHolder)
 
-    // BEGIN_INCLUDE(recyclerViewOnBindViewHolder)
     // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
@@ -149,7 +155,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // with that element
         viewHolder.setText(mDataSet.get(position), context.get());
     }
-    // END_INCLUDE(recyclerViewOnBindViewHolder)
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
@@ -157,6 +162,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return mDataSet.size();
 //        return 0;
     }
+
     public void initSwipeToDismiss(final RecyclerView recyclerView) {
         ItemTouchHelper swipeToDismissTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(
                 ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
