@@ -8,7 +8,7 @@ public interface Sources {
     String ARS_TECHNICA_FULL = "https://newsapi.org/v1/articles?source=ars-technica&sortBy=latest&apiKey=9fc8f76440c84d1ba6cfd9a4dcade040";
     String BBC_NEWS_FULL = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=9fc8f76440c84d1ba6cfd9a4dcade040";
     String BBC_SPORT_FULL = "https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=9fc8f76440c84d1ba6cfd9a4dcade040";
-    String TECH_RADAR_FULL = "https://newsapi.org/v1/articles?source=techradar&sortBy=top&apiKey=9fc8f76440c84d1ba6cfd9a4dcade040";
+    String TECH_RADAR_FULL = "https://newsapi.org/v1/articles?source=techradar&sortBy=latest&apiKey=9fc8f76440c84d1ba6cfd9a4dcade040";
     String HOST0 = "https://newsapi.org/v1/articles/";
     String HOST = "https://newsapi.org/";
     String HOST2 = "v1/articles";
